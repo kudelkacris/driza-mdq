@@ -10,12 +10,8 @@ export default function Header({ onCartClick }) {
   return (
     <header className="sticky top-0 z-40 bg-[#0a0a0a] border-b border-[#c9a84c]/20">
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/">
-          <img
-            src="/logo-v2.png"
-            alt="DRIZA Logo"
-            className="h-16 w-auto object-contain"
-          />
+        <Link href="/" className="text-[#c9a84c] font-heading font-bold text-xl">
+          DRIZA
         </Link>
 
         <nav className="hidden md:flex gap-8 items-center">
@@ -61,5 +57,4 @@ export default function Header({ onCartClick }) {
         </button>
       </div>
     </header>
-  );
-}
+  );}

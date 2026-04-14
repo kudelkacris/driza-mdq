@@ -7,13 +7,6 @@ export default function Hero() {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 text-center">
-        <div className="mb-8 flex justify-center">
-          <img
-            src="/logo.png"
-            alt="DRIZA Logo"
-            className="h-40 w-auto object-contain"
-          />
-        </div>
 
         <h1 className="font-heading text-5xl md:text-7xl font-bold mb-4 gold-accent">
           DRIZA MDQ
