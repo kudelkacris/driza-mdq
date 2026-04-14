@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[#0a0a0a] text-[#ffffff] font-body;
+  font-feature-settings: "kern";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+.gold-accent {
+  color: #c9a84c;
+}
+
+.gold-border {
+  border-color: #c9a84c;
+}
+
+.gold-hover:hover {
+  border-color: #c9a84c;
+  color: #e8c96d;
+}
+
+.gold-bg {
+  @apply bg-[#c9a84c] text-[#0a0a0a];
+}
+
+.gold-bg:hover {
+  @apply bg-[#e8c96d];
+}
+
+.card-dark {
+  @apply bg-[#111111] border border-[#222222];
+}
+
+.card-dark:hover {
+  @apply border-[#c9a84c] shadow-lg shadow-[#c9a84c]/20;
+}
+
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9a84c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e8c96d;
+}
+
+/* Product placeholder image */
+.product-placeholder {
+  @apply w-full h-64 bg-gradient-to-br from-[#222222] to-[#111111] rounded-lg flex items-center justify-center border border-[#c9a84c]/30;
+}
+
+.product-placeholder-content {
+  @apply text-center px-4;
+}
+
+.product-placeholder-content h3 {
+  @apply text-[#e8c96d] text-lg font-bold mb-2;
+}
+
+.product-placeholder-content p {
+  @apply text-[#cccccc] text-sm;
+}
+
+/* Cart sidebar animations */
+.cart-slide-enter {
+  animation: slideInRight 0.3s ease-out;
+}
+
+.cart-slide-exit {
+  animation: slideOutRight 0.3s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
