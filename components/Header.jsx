@@ -10,24 +10,12 @@ export default function Header({ onCartClick }) {
   return (
     <header className="sticky top-0 z-40 bg-[#0a0a0a] border-b border-[#c9a84c]/20">
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/">
           <img
-            src="/logo.png"
+            src="/logo-v2.png"
             alt="DRIZA Logo"
-            className="h-16 w-16 object-contain"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none';
-            }}
+            className="h-16 w-auto object-contain"
           />
-          <div className="w-10 h-10 bg-[#c9a84c] rounded-full flex items-center justify-center">
-            <span className="text-[#0a0a0a] font-heading font-bold text-lg">D</span>
-          </div>
-          <div>
-            <h1 className="font-heading font-bold text-xl gold-accent">
-              DRIZA
-            </h1>
-            <p className="text-[#cccccc] text-xs">MDQ FRAGANCIAS</p>
-          </div>
         </Link>
 
         <nav className="hidden md:flex gap-8 items-center">

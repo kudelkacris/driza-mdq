@@ -8,9 +8,11 @@ export default function Hero() {
 
       <div className="relative max-w-6xl mx-auto px-4 text-center">
         <div className="mb-8 flex justify-center">
-          <div className="w-24 h-24 bg-gradient-to-br from-[#c9a84c] to-[#e8c96d] rounded-full flex items-center justify-center shadow-lg shadow-[#c9a84c]/50">
-            <span className="font-heading font-bold text-5xl text-[#0a0a0a]">D</span>
-          </div>
+          <img
+            src="/logo.png"
+            alt="DRIZA Logo"
+            className="h-40 w-auto object-contain"
+          />
         </div>
 
         <h1 className="font-heading text-5xl md:text-7xl font-bold mb-4 gold-accent">
